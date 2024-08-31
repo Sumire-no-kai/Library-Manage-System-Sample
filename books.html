@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>书籍管理</title>
+    <link rel="stylesheet" href="styles_books.css">
+</head>
+<body>
+<div class="header">
+    <div class="user-info">
+        用户名: <span id="username"></span> | ID: <span id="user-id"></span>
+    </div>
+    <button id="logout-btn" class="logout-btn">注销</button>
+</div>
+<div class="title">
+    <h1>书籍管理</h1>
+</div>
+<div class="search-bar">
+    <input type="text" id="search-input" placeholder="搜索书名...">
+    <button id="search-btn">搜索</button>
+    <button id="add-book-btn">添加书籍</button>
+</div>
+<div class="book-list">
+    <table id="book-table">
+        <thead>
+        <tr>
+            <th>书籍ID</th>
+            <th>书名</th>
+            <th>作者</th>
+            <th>出版年份</th>
+            <th>出版社</th>
+            <th>入库日期</th>
+            <th>状态</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</div>
+<div class="pagination">
+    <button class="pagination-btn" id="prev-page">上一页</button>
+    <button class="pagination-btn" id="next-page">下一页</button>
+</div>
+
+<script src="books.js"></script>
+</body>
+</html>
